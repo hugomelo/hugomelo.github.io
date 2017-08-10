@@ -6,9 +6,6 @@ versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
 #gem "jekyll", "3.5.1"
 
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "beautiful-jekyll-theme"
-
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"

@@ -8,9 +8,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
-    beautiful-jekyll-theme (1.1.1)
-      jekyll (~> 3.3)
-      jekyll-paginate (~> 1.1)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -200,10 +197,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  beautiful-jekyll-theme
   github-pages (= 148)
   jekyll-feed (~> 0.6)
   jekyll-paginate
+  jekyll-sass-converter
   tzinfo-data
 
 BUNDLED WITH

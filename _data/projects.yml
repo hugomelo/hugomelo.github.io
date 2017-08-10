@@ -1,0 +1,22 @@
+#projects section
+# put here all the projects ordered by finish date
+
+- name: Eco Companion
+  image: /assets/img/projects/ecocompanion.jpg
+  url: /projects/ecocompanion
+  tags: "#Rails, #Haml, #Heroku, #MongoDB, #Performance"
+
+- name: Cirandas.net
+  image: /assets/img/projects/cirandas.jpg
+  url: /projects/cirandas
+  tags: "#Rails, #RiotJs, #jQuery, #DevOps"
+
+- name: Am-translations
+  image: /assets/img/projects/translations.jpg
+  url: /projects/translations
+  tags: "#Rails, #RiotJs, #jQuery, #DevOps"
+
+- name: Gamification
+  image: /assets/img/projects/gamification.jpg
+  url: /projects/gamification
+  tags: "#Rails, #RiotJs, #jQuery, #DevOps"

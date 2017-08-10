@@ -1,0 +1,56 @@
+---
+title: Hugo Melo
+subtitle: I am a full-stack software developer working remotely from an eco-farm in Brazil.
+use-site-title: true
+layout: base
+bigimg: /assets/img/background.jpg 
+---
+
+{% include header.html type="page" %}
+
+
+<section class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        {% capture intro %}{% include sections/intro.md %}{% endcapture %}
+        {{ intro | markdownify }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects gray-section">
+  <h2 class=text-center> Projects </h2>
+  <div class="container">
+    <div class="row">
+      {% for project in site.data.projects %}
+      <figure class="col-md-6 img-hover-zoom hover-mask-parent" data-url="{{ project.url | prepend: site.baseurl }}" data-title="{{ project.name }}">
+        <img class="img-hover" src="{{ project.image | prepend: site.baseurl }}" />
+        <figcaption class="hover-mask hover-mask-color hover-mask-zoom-out" >
+          <div class="hover-mask-content text-center">
+            <h3>{{ project.name }}</h3>
+            <p>{{ project.tags }}</p>
+          </div>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" tabindex="-1" role="dialog" id=main-modal>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

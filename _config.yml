@@ -15,29 +15,23 @@
 # in the templates via {{ site.myvariable }}.
 title: Hugo Melo
 email: hugo@riseup.net
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: > 
+  Hugo Melo is a full-stack software engineer from Brazil. He's worked remotely from a farm mainly developing Ruby and Javascript codes.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hugomelo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: hugoomelo
-github_username:  hugomelo
 
 # --- Navigation bar options --- #
-
 # List of links in the navigation bar
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+#navbar-links:
+  #About Me: "/about"
+  #Resources:
+    #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    #- Learn markdown: "http://www.markdowntutorial.com/"
+    #- GitHub Pages: "https://pages.github.com/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/avatar-icon.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -116,6 +110,10 @@ paginate: 5
 
 kramdown:
   input: GFM
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
