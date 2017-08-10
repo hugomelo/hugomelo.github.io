@@ -137,7 +137,9 @@ var main = {
     if (window.lastSite != $(this).data("title")) {
       lastSite = $(this).data("title")
       $modal.find(".modal-header h4").text($(this).data("title"))
-      $body.load($(this).data('url'))
+      // required to add this trailing slash for not being redirected without the https
+      $url = $(this).data('url') + "/"
+      $body.load($url)
     }
 
     $modal.modal("show");
