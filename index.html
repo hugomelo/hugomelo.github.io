@@ -25,7 +25,7 @@ bigimg: /assets/img/background.jpg
   <div class="container">
     <div class="row">
       {% for project in site.data.projects %}
-      <figure class="col-md-6 img-hover-zoom hover-mask-parent" data-url="{{ project.url | prepend: site.baseurl }}" data-title="{{ project.name }}">
+      <figure class="col-md-6 img-hover-zoom hover-mask-parent" data-url="{{ site.url}}{{ project.url | prepend: site.baseurl  }}" data-title="{{ project.name }}">
         <img class="img-hover" src="{{ project.image | prepend: site.baseurl }}" />
         <figcaption class="hover-mask hover-mask-color hover-mask-zoom-out" >
           <div class="hover-mask-content text-center">
